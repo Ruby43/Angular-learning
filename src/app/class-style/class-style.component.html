@@ -1,0 +1,18 @@
+<div class="box" [class.myclass]="true">class binding</div>
+
+<br><br>
+<div class="box" [style.margin]="myStyle">class binding</div>
+<br><br>
+<p>ternory operator</p>
+<div class="box" [style.margin]=" isActive ? myStyle:'5px' ">class binding</div>
+<br><br>
+<p>first way</p>
+<div class="box" [ngClass]="'class1,class2,class3' ">class binding</div>
+<br><br>
+<p>second way</p>
+<div class="box" [ngClass]="myClasses">class binding</div>
+<br><br>
+<div class="box" [ngStyle]="{'background':'red','border':'10px solid green'}">class binding</div>
+<br><br>
+<p>second way</p>
+<div class="box" [ngStyle]="myStyle1">class binding</div>

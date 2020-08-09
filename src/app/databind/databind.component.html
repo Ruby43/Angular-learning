@@ -1,0 +1,41 @@
+<p>// string interpolation</p>
+<p>My name is {{dynName}}</p>
+<br><br>
+{{5*9}}
+<br><br>
+{{"welcome"+dynName}}
+<br><br>
+<!-- javaScript property -->
+{{dynName.length}}
+<br><br>
+ {{dynName.toUpperCase()}}
+ <br><br>
+
+ {{myMethod()}}
+ <br><br>
+ <!-- first way -->
+<!-- my app status is {{appSatus ? "online ":"offiline"}} -->
+<br><br>
+my app status is {{appStatus ? "Status1 ":"Status2"}}
+<br><br>
+<p> // property binding</p>
+<input type="text"name=" " id=""[value]="dynName">
+<br><br>
+<p>Disabeled property</p>
+<input type="text"  [disabled]="true" name=" " id=""[value]="dynName">
+
+<br><br> 
+<!-- second way -->
+<input type="text"name=" " id=""bind-value="dynName">
+<br><br>
+<p>Hidden property</p>
+<input type="text"  [hidden]="true" name=" " id=""[value]="dynName">
+<br><br>
+<p>for dynamic</p>
+<br><br>
+<input type="text"  [disabled]="!enable" name=" " id=""[value]="dynName">
+<br><br>
+
+<input type="text"  [hidden]="!enable" name=" " id=""[value]="dynName">
+
+<!-- ! -used for opposite -->

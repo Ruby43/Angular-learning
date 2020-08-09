@@ -1,0 +1,30 @@
+<!-- // *ngFor="let varname of property name"  -->
+ <div class="container">
+    <div class ="row">
+<div class="col-md-8">
+
+    <table class ="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>S.NO.</th>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Product Id</th>
+                <th>Product Price</th>
+            </tr>
+        </thead>
+    <thead>
+        <tr *ngFor="let mypro of products index as i">
+            <td>#{{i+1}}</td>
+            <td><img src="{{mypro.proimg}}" width="100px" alt=""></td>
+                <td>{{mypro.name}}</td>
+                <td>{{mypro.id}}</td>
+                <td>{{mypro.price}}</td>
+        </tr>
+    </thead>
+    </table>
+</div>
+    </div>
+</div>
+
+
